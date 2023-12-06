@@ -9,7 +9,7 @@
 .container {
   max-width: 1440px;
   width: 100%;
-  padding: 0 108px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -18,13 +18,16 @@ body {
   background: #1E252B;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 .header * {
   color: rgba(255, 255, 255, 0.55);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.header #nav_link {
+  color: rgba(0, 0, 0, 0.55);
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
@@ -38,17 +41,17 @@ body {
   -moz-column-gap: 40px;
        column-gap: 40px;
 }
-.header.nav.-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.header.btn-groups {
+.header .btn-groups {
   display: flex;
   justify-content: center;
   align-items: center;
   -moz-column-gap: 40px;
        column-gap: 40px;
+}
+.header .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .header #nav {
   background-color: transparent;

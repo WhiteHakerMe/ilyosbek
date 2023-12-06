@@ -7,23 +7,26 @@
         font-weight: 500;
         line-height: normal;
     }
-
-    @include flexbeetvn;
-
+    #nav_link {
+        color: rgba(0, 0, 0, 0.55);
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
     &.nav {
         @include flexcenter;
-        column-gap: 40px;
-
-    &.-nav {
-        @include flexcenter;
-    }
+        column-gap: 40px
     }
 
-    &.btn-groups {
+    .btn-groups {
         @include flexcenter;
         column-gap: 40px;
     }
-
+    .content {
+        @include flexbeetvn;
+    }
 
     #nav {
         background-color: transparent;
