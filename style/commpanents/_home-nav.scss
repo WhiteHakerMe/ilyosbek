@@ -1,0 +1,32 @@
+.header {
+    * {
+        color: rgba(255, 255, 255, 0.55);
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    @include flexbeetvn;
+
+    &.nav {
+        @include flexcenter;
+        column-gap: 40px;
+
+    &.-nav {
+        @include flexcenter;
+    }
+    }
+
+    &.btn-groups {
+        @include flexcenter;
+        column-gap: 40px;
+    }
+
+
+    #nav {
+        background-color: transparent;
+        border: transparent;
+    }
+}
