@@ -1,4 +1,6 @@
 .header {
+    padding-top: 31px;
+
     * {
         color: rgba(255, 255, 255, 0.55);
         font-family: Poppins;
@@ -7,23 +9,51 @@
         font-weight: 500;
         line-height: normal;
     }
-    #nav_link {
-        color: rgba(0, 0, 0, 0.55);
-        font-family: Poppins;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-    }
-    &.nav {
-        @include flexcenter;
-        column-gap: 40px
+
+    #nav:active {
+        border: transparent;
+        background-color: transparent;
     }
 
     .btn-groups {
         @include flexcenter;
         column-gap: 40px;
+
     }
+
+    .btn-Login:hover {
+        cursor: pointer;
+        color: rgb(235, 250, 245);
+        transform: scale(1.1);
+    }
+
+    .btn-Login {
+        color: rgba(255, 255, 255, 0.78);
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        background-color: transparent;
+        border: transparent;
+    }
+
+    .btn-Login:nth-last-of-type(1) {
+        width: 118px;
+        height: 48px;
+        border-radius: 8px;
+        background: #FF6E30;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.4s;
+    }
+
+    .btn-Login:nth-last-of-type(1):hover {
+        background: #f88f61;
+        cursor: pointer;
+    }
+
     .content {
         @include flexbeetvn;
     }
@@ -32,4 +62,35 @@
         background-color: transparent;
         border: transparent;
     }
+}
+
+.header-nav {
+    @include flexcenter;
+    column-gap: 40px;
+}
+
+.header-nav_link:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    color: rgba(255, 246, 246, 0.55);
+}
+
+#nav:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    color: rgba(255, 246, 246, 0.55);
+}
+
+.site-logo {
+    @include flexcenter;
+    column-gap: 12px;
+}
+
+.site-logo span {
+    color: rgba(255, 255, 255, 0.90);
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
