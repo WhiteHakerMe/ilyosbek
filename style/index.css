@@ -171,7 +171,7 @@ body {
   border: transparent;
   position: absolute;
   left: 10%;
-  width: 70%;
+  width: 60%;
   height: 100%;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.55);
@@ -220,14 +220,19 @@ input[type=search]:focus {
 
 .banner-graphic {
   padding: 0 20px;
+  position: relative;
 }
 
 .tg-1-content {
   display: flex;
+  position: absolute;
+  right: 30px;
+  transform: translateY(-20%);
 }
 
 .tg-2 {
   padding-top: 50px;
+  position: relative;
 }
 
 .tg-flex {
@@ -235,4 +240,16 @@ input[type=search]:focus {
   -moz-column-gap: 30px;
        column-gap: 30px;
   transform: translateX(-253px);
+}
+
+.tg-3 {
+  position: absolute;
+  right: 50px;
+  padding-top: 90px;
+  position: relative;
+}
+
+.tg-4 {
+  position: absolute;
+  top: 15%;
 }/*# sourceMappingURL=index.css.map */
