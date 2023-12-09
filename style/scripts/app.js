@@ -10,3 +10,17 @@ nuqtaElement.appendChild(orage)
 
 let button = document.getElementById('button');
 
+// site animation
+const animationsite = document.getElementById("siteElement");
+let position = 10;
+
+function animate() {
+    position += 1;
+    animationsite.style.button = `${position}px`;
+
+    if(position < window.innerWidth - animationsite.clientWidth) {
+        requestAnimationFrame(animate);
+    }
+}
+
+animate();
