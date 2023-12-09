@@ -223,33 +223,33 @@ input[type=search]:focus {
   position: relative;
 }
 
-.tg-1-content {
+.icon-png {
   display: flex;
-  position: absolute;
-  right: 30px;
-  transform: translateY(-20%);
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
 }
 
-.tg-2 {
+#Vector1 {
   padding-top: 50px;
-  position: relative;
 }
 
-.tg-flex {
-  display: flex;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
-  transform: translateX(-253px);
-}
-
-.tg-3 {
+#Vector3 {
   position: absolute;
-  right: 50px;
-  padding-top: 90px;
-  position: relative;
+  top: 0;
+  left: 19%;
+  transform: translateX(100%);
 }
 
-.tg-4 {
+#Vector4 {
   position: absolute;
-  top: 15%;
+  top: 29px;
+  left: 56%;
+  transform: translateX(100%);
+}
+
+#Vector5 #Vector6 #Vector7 {
+  position: absolute;
+  top: 0;
+  left: 0;
 }/*# sourceMappingURL=index.css.map */

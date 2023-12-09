@@ -2,4 +2,30 @@
     padding: 0 20px;
     position: relative;
 }
+.icon-png {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+#Vector1 {
+    padding-top: 50px;
+}
+#Vector3 {
+    position: absolute;
+    top: 0;
+    left: 19%;
+    transform: translateX(100%);
+}
+#Vector4 {
+    position: absolute;
+    top: 29px;
+    left: 56%;
+    transform: translateX(100%);
+}
+#Vector5 #Vector6 #Vector7{
+    position: absolute;
+    top:0
+    ;
+    left: 0;
+}
 
