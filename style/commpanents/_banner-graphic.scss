@@ -2,14 +2,17 @@
     padding: 0 20px;
     position: relative;
 }
+
 .icon-png {
     display: flex;
     align-items: center;
     column-gap: 20px;
 }
+
 #Vector1 {
     padding-top: 50px;
 }
+
 #Vector3 {
     position: absolute;
     top: 0;
@@ -26,10 +29,12 @@
         opacity: 0;
         display: none;
     }
-    10%{
+
+    10% {
         opacity: 0.5;
         display: block;
     }
+
     55% {
         transform: scale(1.3) translateX(-25px);
         opacity: 1;
@@ -46,15 +51,18 @@
     animation-duration: 6s;
     animation-direction: 1;
 }
+
 @keyframes Vector4 {
     0% {
         opacity: 0;
         display: none;
     }
+
     25% {
         opacity: 0.5;
         display: none;
     }
+
     50% {
         transform: scale(1.2) translateX(-100px);
         opacity: 1;
@@ -64,34 +72,39 @@
 
 #Vector5 {
     position: absolute;
-    top:30%;
+    top: 30%;
     right: 40%;
     transform: translateX(100%);
     animation-name: Vector5;
     animation-duration: 3s;
     animation-direction: 1;
 }
-@keyframes Vector5{
+
+@keyframes Vector5 {
     0% {
         opacity: 0;
         display: none;
     }
+
     25% {
         opacity: 0;
         display: none;
     }
+
     50% {
         opacity: 0.5;
         display: block;
     }
+
     75% {
         transform: scale(1.1) translateX(300px);
         opacity: 1;
     }
 }
+
 #Vector6 {
     position: absolute;
-    top:35%;
+    top: 35%;
     right: 40%;
     transform: translateX(100%);
     animation-name: Vector6;
@@ -104,22 +117,26 @@
         opacity: 0;
         display: none;
     }
+
     25% {
         opacity: 0;
         display: none;
     }
+
     50% {
         opacity: 0.5;
         display: block;
     }
+
     85% {
         transform: scale(1.1) translateX(300px);
         opacity: 1;
     }
 }
+
 #Vector7 {
     position: absolute;
-    top:40%;
+    top: 40%;
     right: 40%;
     transform: translateX(100%);
     animation-name: Vector7;
@@ -127,24 +144,29 @@
     animation-direction: 1;
     transition: 0.4s;
 }
+
 @keyframes Vector7 {
     0% {
         opacity: 0;
         display: none;
     }
+
     25% {
         opacity: 0;
         display: none;
     }
+
     50% {
         opacity: 0.5;
         display: block;
     }
+
     90% {
         transform: scale(1.1) translateX(300px);
         opacity: 1;
     }
 }
+
 .site-section {
     width: 100%;
     animation: moveRight 2s ease-in-out 1;
@@ -155,31 +177,37 @@
         transform: scale(1.1) translateY(100%);
     }
 }
+
 #Vector8 {
     position: absolute;
     top: 50%;
-    right:40%;
+    right: 40%;
     transform: translateX(100%);
     animation-name: Vector8;
     animation-duration: 8s;
 }
+
 @keyframes Vector8 {
     0% {
         opacity: 0;
         display: none;
     }
+
     25% {
         opacity: 0;
         display: none;
     }
+
     50% {
         opacity: 0;
         display: none;
     }
+
     75% {
         opacity: 0.5;
         display: block;
     }
+
     90% {
         transform: scale(1.1) translateX(-50px);
         display: block;
@@ -188,4 +216,38 @@
     }
 }
 
+#Vector9 {
+    position: absolute;
+    top: 10%;
+    right: 60%;
+    transform: translateX(100%);
+    animation-name: Vector9;
+    animation-duration: 8s;
+    animation-direction: 1;
+}
 
+@keyframes Vector9 {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        transition: 2s;
+        opacity: 1;
+        top: 20%;
+        right: 40%;
+        transform: translateX(100%);
+    }
+}

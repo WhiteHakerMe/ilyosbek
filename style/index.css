@@ -412,4 +412,89 @@ input[type=search]:focus {
     opacity: 1;
     transition: 4s;
   }
+}
+#Vector9 {
+  position: absolute;
+  top: 10%;
+  right: 60%;
+  transform: translateX(100%);
+  animation-name: Vector9;
+  animation-duration: 8s;
+  animation-direction: 1;
+}
+
+@keyframes Vector9 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    transition: 2s;
+    opacity: 1;
+    top: 20%;
+    right: 40%;
+    transform: translateX(100%);
+  }
+}
+.site-section2 {
+  width: 110px;
+  top: 10%;
+  right: 20%;
+  transform: translateX(-50%);
+  position: relative;
+}
+
+#page3 {
+  position: absolute;
+  top: 0;
+}
+
+#page4 {
+  position: absolute;
+  top: 3%;
+  transform: translateY(10px);
+  left: 20px;
+}
+
+#page5 {
+  position: absolute;
+  top: 14%;
+  left: 0;
+  transform: translateX(10px);
+}
+
+#page6 {
+  position: absolute;
+  top: 18%;
+  left: 0;
+  transform: translateX(10px);
+}
+
+#page7 {
+  position: absolute;
+  top: 22%;
+  left: 0;
+  transform: translateX(10px);
+}
+
+#page8 {
+  position: absolute;
+  top: 29%;
+  left: 0;
+  transform: translateX(5%);
+}
+
+#page9 {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  transform: translateY(33%);
 }/*# sourceMappingURL=index.css.map */
