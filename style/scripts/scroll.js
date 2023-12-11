@@ -1,10 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to('.icon-png', {
-    scale:2,
-    z:1,
-    ease:"ease",
-})
 
 
 const timeline = gsap.timeline();
