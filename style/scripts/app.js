@@ -35,3 +35,13 @@ catalogs.forEach(catalog => {
         catalog.style.setProperty('--y', y + 'px');
     }
 })
+let brands = document.querySelectorAll('.logos');
+brands.forEach(logos => {
+    logos.onmousemove = function(e) {
+        let x = e.pageX - logos.offsetLeft;
+        let y = e.pageY - logos.offsetTop;
+
+        logos.style.setProperty('--x', x + 'px');
+        logos.style.setProperty('--y', y + 'px');
+    }
+})
