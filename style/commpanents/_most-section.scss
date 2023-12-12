@@ -3,6 +3,7 @@
     height: 100vh;
     padding-top: 30vh;
 
+
     &-info {
         max-width: 455px;
         width: 100%;
@@ -22,6 +23,7 @@
             font-weight: 500;
             line-height: 130%;
             /* 62.4px */
+
         }
 
         &_subtitle {
@@ -34,6 +36,7 @@
             font-weight: 500;
             line-height: 30px;
             /* 166.667% */
+
         }
     }
 
@@ -43,7 +46,7 @@
         align-items: center;
         justify-content: center;
         column-gap: 24px;
-
+        row-gap: 100px;
     }
 
     &-catalog {
@@ -52,12 +55,72 @@
         padding: 33px 34px;
         border-radius: 15px;
         background: #1E252B;
-
-        &:hover {
-            transform: ;
-        }
+        position: relative;
+        overflow: hidden;
+        transition: 0.5s;
     }
 
+    &-catalog::before {
+        content: " ";
+        position: absolute;
+        top: var(--y);
+        left: var(--x);
+        transform: translate(-50%, -50%);
+        background: radial-gradient(var(--clr), transparent, transparent);
+        width: 500px;
+        height: 250px;
+        opacity: 0;
+        transition: 0.5s, top 0s, left 0s;
+    }
+
+    &-catalog:hover::before {
+        opacity: 1;
+    }
+
+    &-catalog::after {
+        content: "";
+        position: absolute;
+        inset: 2px;
+        border-radius: 18px;
+        background: rgba(40, 48, 54, 0.9);
+        opacity: 0;
+        z-index: 0;
+    }
+
+    &-catalog:hover::after {
+        opacity: 1;
+    }
+
+    &-catalog:hover .like path {
+        fill: #FD3B41;
+
+    }
+
+    &-catalog:hover .like-blog .like {
+        width: 42px;
+        height: 42px;
+        border-radius: 8px;
+        background: #283036;
+        box-shadow: 0px 5px 10px -3px rgba(18, 18, 18, 0.15);
+        padding: 7px 7px;
+    }
+
+    &-catalog:hover .catalog-btn-visit {
+        border-radius: 8px;
+        background: #FF6E30;
+        padding: 9px 35px;
+        position: absolute;
+        right: 15px;
+        bottom: 30px;
+    }
+
+    &-catalog:hover .btn-icon {
+        position: absolute;
+    }
+
+    &-catalog:hover {
+        transform: scale(1.1);
+    }
 }
 
 .catalog-logo {
@@ -79,6 +142,7 @@
         font-weight: 400;
         line-height: 30px;
         /* 187.5% */
+
     }
 }
 
@@ -110,6 +174,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .btn-icon {
@@ -124,5 +189,23 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
+    line-height: normal;
+}
+
+.more {
+    display: block;
+    text-align: center;
+    margin-block: 100px;
+    margin-left: 45%;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: #1E252B;
+    width: 184px;
+    height: 64px;
+    color: #FF6E30;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
     line-height: normal;
 }
