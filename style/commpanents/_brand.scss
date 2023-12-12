@@ -1,6 +1,8 @@
 .brand {
     width: 100%;
-    padding-top: 5vh;
+    padding-block: 8vh;
+    padding-bottom: 21vh;
+    
 
     &-title {
         position: absolute;
@@ -58,5 +60,13 @@
         &:hover::after {
             opacity: 1;
         }
+    }
+    &-logo-wrappr {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 107px;
+        padding-top: 91px;
     }
 }

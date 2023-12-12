@@ -35,6 +35,7 @@ catalogs.forEach(catalog => {
         catalog.style.setProperty('--y', y + 'px');
     }
 })
+
 let brands = document.querySelectorAll('.logos');
 brands.forEach(logos => {
     logos.onmousemove = function(e) {
@@ -43,5 +44,16 @@ brands.forEach(logos => {
 
         logos.style.setProperty('--x', x + 'px');
         logos.style.setProperty('--y', y + 'px');
+    }
+})
+
+let platformcatalogs = document.querySelectorAll('.platformcatalog');
+platformcatalogs.forEach(platformcatalog => {
+    platformcatalog.onmousemove = function(e) {
+        let x = e.pageX - platformcatalog.offsetLeft;
+        let y = e.pageY - platformcatalog.offsetTop;
+
+        platformcatalog.style.setProperty('--x', x + 'px');
+        platformcatalog.style.setProperty('--y', y + 'px');
     }
 })
