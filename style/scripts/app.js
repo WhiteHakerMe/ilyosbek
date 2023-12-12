@@ -24,3 +24,14 @@ function animate() {
 }
 
 animate();
+
+let catalogs = document.querySelectorAll('.catalog');
+catalogs.forEach(catalog => {
+    catalog.onmousemove = function(e) {
+        let x = e.pageX - catalog.offsetLeft;
+        let y = e.pageY - catalog.offsetTop;
+
+        catalog.style.setProperty('--x', x + 'px');
+        catalog.style.setProperty('--y', y + 'px');
+    }
+})
