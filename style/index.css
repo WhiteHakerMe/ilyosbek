@@ -222,7 +222,7 @@ input[type=search]:focus {
 .banner-graphic {
   padding: 0 20px;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
   margin-top: 100px;
 }
 
@@ -933,4 +933,40 @@ input[type=search]:focus {
   font-size: 16px;
   font-weight: 600;
   margin-right: 21px;
+}
+
+.aboutme, .about {
+  padding-block: 23.5vh;
+}
+.aboutme-wrappr, .about-wrappr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutme-myimgs, .about-myimgs {
+  width: 559px;
+  position: relative;
+}
+.aboutme-myimgs-image, .about-myimgs-image {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.3;
+  border: 0.1px solid rgb(104, 104, 104);
+  width: 400px;
+  height: 400px;
+  background-color: transparent;
+  top: 0%;
+  left: 0;
+  z-index: -1;
+  position: relative;
+}
+.aboutme-myimgs-image::before, .about-myimgs-image::before {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 25%;
+  top: 20%;
+  left: 20px;
+  box-shadow: 0 0 25px 12px #B345F1;
+  filter: blur(25px);
 }/*# sourceMappingURL=index.css.map */
