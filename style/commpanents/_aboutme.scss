@@ -4,6 +4,9 @@
 
     &-slide {
         padding-top: 0;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
     }
 
     &-wrappr {
@@ -135,4 +138,19 @@
 #david {
     position: absolute;
     top: -8%;
+}
+
+.btnleft {
+    width: 100px;
+    height: 10vh;
+    background-color: transparent;
+    border: transparent;
+    padding: 0;
+    margin: 0;
+    transform: translateY(-50vh) translateX(110vh);
+}
+.btnleft:active {
+    transform: scale(1.1);
+    margin: 0;
+    padding: 0;
 }
