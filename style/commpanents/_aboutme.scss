@@ -2,13 +2,6 @@
 .about {
     padding-block: 23.5vh;
 
-    &-slide {
-        padding-top: 0;
-        width: 100%;
-        height: auto;
-        overflow: hidden;
-    }
-
     &-wrappr {
         display: flex;
         align-items: center;
@@ -140,17 +133,70 @@
     top: -8%;
 }
 
+.about-slide {
+    position: relative;
+}
+
+.btnright {
+    width: 100px;
+    height: 10vh;
+    background-color: transparent;
+    border: transparent;
+    transform: translate(115vh, -59vh);
+
+    &:active path {
+        fill: #FF6E30;
+        transition: 0.5s;
+        transform: translateY(-59vh);
+    }
+}
+
 .btnleft {
     width: 100px;
     height: 10vh;
     background-color: transparent;
     border: transparent;
-    padding: 0;
-    margin: 0;
-    transform: translateY(-50vh) translateX(110vh);
+    // background-color: red;
+    transform: translateY(-59vh);
 }
-.btnleft:active {
-    transform: scale(1.1);
-    margin: 0;
-    padding: 0;
+
+.btnleft:active path {
+    fill: #FF6E30;
+    transition: 0.5s;
+    transform: translateY(-59vh);
+}
+.demo {
+    background: transparent;
+    border: 1px solid #323e49;
+    width: 68px;
+    height: 8px;
+    transform: translateY(-30vh);
+
+}
+.active-btn {
+    width: 198px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+    margin-left: 35%;
+}
+.mySlides {
+    display: none;
+}
+.active, .dot:hover {
+    background-color: #FF6E30;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.4s;
+}
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
 }

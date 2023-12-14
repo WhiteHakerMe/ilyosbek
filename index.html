@@ -457,7 +457,7 @@
         </section>
         <section class="aboutme about">
             <div class="container">
-                <div class="about-slide">
+                <div class="about-slide mySlides fade">
                     <div class="about-wrappr">
                         <div class="about-myimgs">
                             <img src="./img/david-suarez-4a1nNlrS5ZI-unsplash.png" id="david" alt="">
@@ -482,16 +482,50 @@
                         </div>
                     </div>
                 </div>
+                <div class="about-slide mySlides fade">
+                    <div class="about-wrappr">
+                        <div class="about-myimgs">
+                            <img src="./img/ilyosbek.png" id="david" width="350px" height="500px" alt="">
+                            <div class="about-myimgs-image"></div>
+                            <div class="color"></div>
+                            <div class="color2">
+                                <h4 class="color2-title">Ronald Richards</h4>
+                                <span class="color2-subtitle">Product Manager</span>
+                            </div>
+                        </div>
+
+                        <div class="about-info">
+                            <span class="about-info_span"><img src="./img/“.png" alt=""></span>
+                            <p class="about-info_text">Incididunt cillum do sint sint enim ullamco id deserunt mollit
+                                qui
+                                reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit labore
+                                occaecat do
+                                deserunt Lorem magna officia incididunt consectetur amet. Sunt consectetur veniam minim
+                                ex
+                                commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.
+                            </p>
+                        </div>
+                    </div>
+                </div>
                 <div class="about-btn">
-                    <button class="btnleft" onclick="plusDivs(-1)"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                        <path d="M18 36L30 24L18 12" stroke="#FF6E30" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    <button class="btnleft" onclick="plusSlides(-1)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="28" viewBox="0 0 16 28" fill="none">
+                            <path d="M14 26L2 14L14 2" stroke="white" stroke-opacity="0.28" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </button>
-                    <button class="btnright" onclick="plusDivs(1)"></button>
+                    <button class="btnright" onclick="plusSlides(1)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="28" viewBox="0 0 16 28" fill="none">
+                            <path d="M2 26L14 14L2 2" stroke="white" stroke-opacity="0.28" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
                 </div>
-                <button class="about-btn demo" onclick="currentDiv(1)"></button>
-                <button class="about-btn2 demo" onclick="currentDiv(2)"></button>
-                <button class="about-btn3 demo" onclick="currentDiv(3)"></button>
+                <div class="active-btn">
+                    <button class="about-btn demo" onclick="currentSlide(1)"></button>
+                    <button class="about-btn2 demo" onclick="currentSlide(2)"></button>
+                    <button class="about-btn3 demo" onclick="currentSlide(3)"></button>
+                </div>
             </div>
         </section>
     </main>
@@ -499,6 +533,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.6/ScrollTrigger.min.js"></script>
     <script src="./style/scripts/app.js"></script>
     <script src="./style/scripts/scroll.js"></script>
+    <script src="./style/scripts/index.js"></script>
 </body>
 
 </html>
